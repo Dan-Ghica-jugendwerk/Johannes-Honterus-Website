@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Johannes Honterus School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="Logo.png" alt="Sigla Școlii" class="w-12 h-12 mr-4">
+                <h1 id="johannes-honterus" class="text-2xl font-bold">Colegiul Național "Johannes Honterus" Brașov</h1>
+            </div>
+            <nav class="flex">
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Acasă</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="main.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Bun venit</a>
+                        <a href="main.html#noutati" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Noutăți</a>
+                        <a href="main.html#evenimente" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Evenimente</a>
+                    </div>
+                </div>
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Despre noi</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="about.html#misiune" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Misiune</a>
+                        <a href="about.html#personal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Personal</a>
+                        <a href="about.html#facilitati" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Facilități</a>
+                    </div>
+                </div>
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Istorie</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="history.html#cronologie" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cronologie</a>
+                        <a href="history.html#fondatori" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Fondatori</a>
+                        <a href="history.html#realizari" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Realizări</a>
+                    </div>
+                </div>
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Clasa Pregătitoare</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="offer.html#program" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Program</a>
+                        <a href="offer.html#orar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Orar</a>
+                        <a href="offer.html#inscriere" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Înscriere</a>
+                    </div>
+                </div>
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Proiecte</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="projects.html#curente" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Proiecte curente</a>
+                        <a href="projects.html#anterioare" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Proiecte anterioare</a>
+                        <a href="projects.html#implica-te" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Implică-te</a>
+                    </div>
+                </div>
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Contact</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="contact.html#locatie" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Locație</a>
+                        <a href="contact.html#telefon" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Telefon</a>
+                        <a href="contact.html#email" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Email</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+        <h2 class="text-3xl font-bold mb-6">Despre Colegiul Național "Johannes Honterus" Brașov</h2>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h3 class="text-2xl font-bold mb-4">Informații generale</h3>
+            <p>Colegiul Național "Johannes Honterus" din Brașov este o instituție de învățământ preuniversitar cu predare în limbile germană și română, cu o tradiție de peste 480 de ani. Școala a fost înființată în anul 1541 de către Johannes Honterus, umanist și reformator sas, și poartă numele acestuia din anul 1898.</p>
+            <p class="mt-4">În prezent, colegiul are următoarea structură:</p>
+            <ul class="list-disc list-inside mt-2">
+                <li>Nivel primar: 10 clase (5 în limba germană, 5 în limba română)</li>
+                <li>Nivel gimnazial: 13 clase (8 în limba germană, 5 în limba română)</li>
+                <li>Nivel liceal: 20 clase (12 în limba germană, 8 în limba română)</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h3 class="text-2xl font-bold mb-4">Misiunea noastră</h3>
+            <p>Misiunea Colegiului Național "Johannes Honterus" este de a oferi o educație de calitate, bazată pe valorile tradiționale ale școlii și adaptată la cerințele moderne ale societății. Ne propunem să formăm tineri competenți, cu o gândire critică și creativă, capabili să se integreze cu succes în societatea contemporană și să contribuie la dezvoltarea acesteia.</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h3 class="text-2xl font-bold mb-4">Viziunea noastră</h3>
+            <p>Viziunea noastră este de a fi o instituție de învățământ de elită, recunoscută la nivel național și internațional pentru excelența academică, inovația în educație și formarea de lideri responsabili și implicați în comunitate.</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h3 class="text-2xl font-bold mb-4">Valori fundamentale</h3>
+            <ul class="list-disc list-inside">
+                <li>Excelență academică</li>
+                <li>Respect pentru diversitate și tradiție</li>
+                <li>Inovație și adaptabilitate</li>
+                <li>Integritate și responsabilitate</li>
+                <li>Colaborare și parteneriat</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-4">Oferta educațională</h3>
+            <p>Colegiul Național "Johannes Honterus" oferă un curriculum diversificat și adaptat nevoilor elevilor noștri:</p>
+            <ul class="list-disc list-inside mt-2">
+                <li>Educație bilingvă (germană-română) la toate nivelurile de studiu</li>
+                <li>Programe specializate în matematică-informatică și științele naturii</li>
+                <li>Cursuri opționale în domenii precum robotică, programare, artă și cultură</li>
+                <li>Pregătire pentru examene internaționale de limbă germană (DSD I și DSD II)</li>
+                <li>Activități extracurriculare variate (cluburi, competiții, proiecte internaționale)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="container mx-auto text-center mt-8 p-4">
+        <p>© 2024 Colegiul Național "Johannes Honterus" Brașov. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
