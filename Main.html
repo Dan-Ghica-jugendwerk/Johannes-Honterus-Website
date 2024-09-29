@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegiul Național "Johannes Honterus" Brașov</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="Logo.png" alt="Sigla Școlii" class="w-12 h-12 mr-4">
+                <h1 id="johannes-honterus" class="text-2xl font-bold">Colegiul Național "Johannes Honterus" Brașov</h1>
+            </div>
+            <nav class="flex">
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Acasă</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="main.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Bun venit</a>
+                        <a href="main.html#noutati" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Noutăți</a>
+                        <a href="main.html#evenimente" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Evenimente</a>
+                    </div>
+                </div>
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Despre noi</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="about.html#misiune" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Misiune</a>
+                        <a href="about.html#personal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Personal</a>
+                        <a href="about.html#facilitati" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Facilități</a>
+                    </div>
+                </div>
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Istorie</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="history.html#cronologie" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cronologie</a>
+                        <a href="history.html#fondatori" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Fondatori</a>
+                        <a href="history.html#realizari" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Realizări</a>
+                    </div>
+                </div>
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Clasa Pregătitoare</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="offer.html#program" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Program</a>
+                        <a href="offer.html#orar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Orar</a>
+                        <a href="offer.html#inscriere" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Înscriere</a>
+                    </div>
+                </div>
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Proiecte</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="projects.html#curente" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Proiecte curente</a>
+                        <a href="projects.html#anterioare" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Proiecte anterioare</a>
+                        <a href="projects.html#implica-te" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Implică-te</a>
+                    </div>
+                </div>
+                <div class="relative ml-4" x-data="{ open: false }">
+                    <button @click="open = !open" class="hover:underline">Contact</button>
+                    <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="contact.html#locatie" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Locație</a>
+                        <a href="contact.html#telefon" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Telefon</a>
+                        <a href="contact.html#email" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Email</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+        <section class="mb-8">
+            <img src="Colengiul-Honterus-banner.jpg" alt="Colegiul Național Johannes Honterus" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4">Bine ați venit la Colegiul Național "Johannes Honterus" Brașov</h2>
+            <p>Suntem o instituție de învățământ modernă, cu o tradiție de peste 480 de ani, cunoscută pentru comunitatea noastră puternică, sprijinul personalizat și oferta educațională variată. Școala noastră combină o istorie bogată cu metode de predare inovatoare pentru a pregăti elevii pentru provocările viitorului.</p>
+            <a href="about.html" class="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Aflați mai multe despre noi</a>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <section class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4">Ultimele noutăți</h2>
+                <ul class="list-disc list-inside">
+                    <li>Târgul de Științe Anual: 15 mai 2024</li>
+                    <li>Conferințe Părinte-Profesor: 10-12 aprilie 2024</li>
+                    <li>Înscrierile pentru Școala de Vară sunt acum deschise</li>
+                </ul>
+            </section>
+
+            <section class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4">Linkuri rapide</h2>
+                <ul>
+                    <li><a href="#" class="text-blue-600 hover:underline">Portal Elevi</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Resurse pentru Părinți</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Calendar Academic</a></li>
+                    <li><a href="history.html" class="text-blue-600 hover:underline">Istoria noastră bogată</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="container mx-auto text-center mt-8 p-4">
+        <p>© 2024 Colegiul Național "Johannes Honterus" Brașov. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
