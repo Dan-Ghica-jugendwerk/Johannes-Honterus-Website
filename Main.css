@@ -117,28 +117,26 @@ section p {
 
 section {
     padding: 40px 20px;
-    text-align: center; /* Center text and elements */
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Align items vertically */
-    align-items: center; /* Center items horizontally */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Full width banner image */
 .banner-image {
-    width: 100%; /* Full width */
-    object-fit: cover; /* Ensure it covers the area without distortion */
-    margin: 20px 0; /* Space above and below the image */
+    width: 100%;
+    object-fit: cover; 
+    margin: 20px 0;
 }
 
 /* Video Section */
 video {
-    width: 100%; /* Full width */
-    max-width: 720px; /* Maximum width of the video */
-    height: auto; /* Auto height */
-    margin: 20px 0; /* Space above and below the video */
+    width: 100%;
+    max-width: 720px;
+    height: auto; 
+    margin: 20px 0; 
 }
 
-/* Footer */
 footer {
     background-color: #222533;
     color: white;
@@ -148,7 +146,7 @@ footer {
 }
 section {
     padding: 40px 20px;
-    text-align: left; /* Align text to the left for better readability */
+    text-align: left;
 }
 
 section h2 {
@@ -166,18 +164,16 @@ section p {
     margin-bottom: 20px;
 }
 
-/* Full width image */
 .full-width-image {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px 0; /* Space above and below the image */
+    width: 100%; 
+    height: auto;
+    margin: 20px 0; 
 }
 
-/* Date formatting */
 section p time {
     display: inline-block;
-    width: 100px; /* Space for dates */
-    text-align: left; /* Align dates to the left */
-    font-weight: bold; /* Make dates pop */
-    color: #000000; /* Change color to make it stand out */
+    width: 100px; 
+    text-align: left;
+    font-weight: bold; 
+    color: #000000;
 }
