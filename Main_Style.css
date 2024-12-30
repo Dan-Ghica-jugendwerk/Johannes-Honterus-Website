@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
+    background-color: #ffffff; /* Set a white background globally */
     color: #333;
     line-height: 1.6;
 }
@@ -17,6 +17,7 @@ body {
     padding: 0 20px;
 }
 
+/* Header and Navigation */
 header {
     background-color: #31385C;
     padding: 15px 0;
@@ -70,6 +71,7 @@ nav {
     color: #5262B3;
 }
 
+/* Main content */
 main {
     padding: 40px 0;
 }
@@ -92,6 +94,7 @@ p {
     margin-bottom: 20px;
 }
 
+/* Sections */
 .section {
     background-color: white;
     border-radius: 8px;
@@ -100,14 +103,16 @@ p {
     margin-bottom: 30px;
 }
 
+/* Media Elements - Image and Video Centering */
 .banner-image, video {
     width: 100%;
-    max-width: 800px; 
+    max-width: 800px; /* Limit the width */
     height: auto;
     display: block;
-    margin: 20px auto;
+    margin: 20px auto; /* Center horizontally */
 }
 
+/* Buttons */
 .btn {
     display: inline-block;
     background-color: #5262B3;
@@ -124,6 +129,7 @@ p {
     background-color: #31385C;
 }
 
+/* Footer */
 footer {
     background-color: #222533;
     color: white;
@@ -132,6 +138,7 @@ footer {
     font-size: 14px;
 }
 
+/* Responsive design */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
@@ -147,6 +154,7 @@ footer {
     }
 }
 
+/* Additional Flexbox Section Alignment */
 .flex-section {
     display: flex;
     justify-content: center;
